@@ -40,14 +40,14 @@ def fetch_user_repositories(github_url):
     if response.status_code == 200:
         repositories = response.json()
         for repository in repositories:
-            repository["url"] = repository["html_url"]  # Add the repository URL to each repository object
+            repository["url"] = repository["html_url"] 
         return repositories
     else:
         print(f"Error fetching repositories: {response.text}")
         return []
 
 def preprocess_code(code):
-    # Implement your code preprocessing techniques here
+    # Implement code preprocessing techniques
     preprocessed_code = code
     return preprocessed_code
 
