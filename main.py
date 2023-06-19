@@ -27,9 +27,8 @@ def analyze():
 
     return render_template("result.html", repository=most_complex_repository, analysis=gpt_analysis)
 def generate_gpt_analysis(repository):
-    # Perform GPT analysis for the repository
-    # Implement your logic here
 
+    # Perform GPT analysis for the repository
     analysis = "Sample GPT analysis for the repository"
     return analysis
 
